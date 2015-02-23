@@ -58,6 +58,9 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
+    singleRun: false,
+
+    // The maximum number of browsers Karma should attempt to launch at the same time.
+    concurrentBrowsers: 10
   });
 };
